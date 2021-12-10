@@ -1,9 +1,10 @@
 .btn{
     border-radius: 0;
+    margin: 5px;
 }
 
 .option{
-    background-color:#cadaee;
+    background-color:#98f095;
     font-size:20px;
     padding:10px;
     margin:3px;
@@ -18,7 +19,7 @@
 }
 
 .result-question{
-    background-color:#eee;
+    background-color:rgb(194, 182, 219);
     margin:4px;
     padding:6px;
 }
