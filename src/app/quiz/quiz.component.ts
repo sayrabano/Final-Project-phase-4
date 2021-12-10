@@ -4,6 +4,7 @@ import { QuizService } from '../services/quiz.service';
 import { HelperService } from '../services/helper.service';
 import { Option, Question, Quiz, QuizConfig } from '../models/index';
 
+
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
@@ -11,7 +12,7 @@ import { Option, Question, Quiz, QuizConfig } from '../models/index';
   providers: [QuizService]
 })
 export class QuizComponent implements OnInit {
-
+ 
   quizes: any[];
   quiz: Quiz = new Quiz(null);
   mode = 'quiz';
@@ -48,6 +49,7 @@ export class QuizComponent implements OnInit {
     this.quizes = this.quizService.getAll();
     this.quizName = this.quizes[0].id;
     this.loadQuiz(this.quizName);
+    
   }
 
   loadQuiz(quizName: string) {
